@@ -1,7 +1,7 @@
 import boto3
 
 def update_lambdas_to_python_39():
-    lambda_client = boto3.client('lambda', region_name='eu-west-2')
+    lambda_client = boto3.client('lambda', region_name='eu-west-1')
 
     # Paginator for handling more than 50 Lambdas
     paginator = lambda_client.get_paginator('list_functions')

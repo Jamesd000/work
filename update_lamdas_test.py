@@ -25,5 +25,5 @@ def update_lambda_to_python_39(function_name):
         print(f"Failed to update {function_name}: {str(e)}")
 
 # Specify the function name you want to update
-function_name_to_test = "my_example_test"
+function_name_to_test = "test"
 update_lambda_to_python_39(function_name_to_test)
