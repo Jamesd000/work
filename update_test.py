@@ -1,7 +1,7 @@
 import boto3
 
 def update_lambda_to_python_39(function_name):
-    lambda_client = boto3.client('lambda')
+    lambda_client = boto3.client('lambda', region_name='eu-west-2')
 
     try:
         # Retrieve the current configuration of the specified Lambda function
@@ -25,5 +25,5 @@ def update_lambda_to_python_39(function_name):
         print(f"Failed to update {function_name}: {str(e)}")
 
 # Specify the function name you want to update
-function_name_to_test = "test"
+function_name_to_test = "my_example_test"
 update_lambda_to_python_39(function_name_to_test)
