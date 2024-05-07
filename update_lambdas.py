@@ -48,7 +48,7 @@ def confirm_and_update(functions, region, new_runtime):
         print("Update cancelled.")
 
 # List potential updates
-python_functions = list_lambdas_to_update('eu-west-1', 'python3.8')
+python_functions = list_lambdas_to_update('eu-west-1', 'python3.6')
 nodejs_functions = list_lambdas_to_update('us-east-1', 'nodejs', 18)
 
 # Confirm and update Python functions
